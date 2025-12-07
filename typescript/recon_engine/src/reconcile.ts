@@ -26,7 +26,9 @@ import generateHTML from '../utils/generateHTML.js';
 
   const reportHTML = generateHTML(summary);
 
-  const outputPath = path.join(dataDir, 'reconciliation_report.html');
+  const outputDir = path.join(process.cwd(), 'output');
+  const outputPath = path.join(outputDir, 'reconciliation_report.html');
+
   fs.writeFileSync(outputPath, reportHTML);
 
   console.log(`Reconciliation complete! Report saved to ${outputPath}`);
