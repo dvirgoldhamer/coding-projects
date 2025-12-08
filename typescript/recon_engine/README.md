@@ -18,11 +18,13 @@ This project is a Reconciliation Engine built in TypeScript. It is doing three m
 
 ## Project output
 
-The HTML report includes a summary section - describing the amount and percentage of underpaid, balanced and overpaid
-claims (a balanced claim for example would be a claim where the insurance company paid the exact amount of paid invoices by 
-the client).
-The report also includes a table which shows all of the claims, with the respective fields - claim_id, patient_id, 
-charges_amount, benefit_amoun, total_transaction_value and reconciliation status.
+The HTML report includes:
+ - A summary section - describing the amount and percentage of underpaid, balanced and overpaid
+   claims (a balanced claim for example would be a claim where the insurance company paid the exact amount of paid invoices by 
+   the client).
+ - A pie chart showing the distribution of claims according to their status
+ - A detailed table which shows all of the claims, with the respective fields - claim_id, patient_id, 
+   charges_amount, benefit_amoun, total_transaction_value and reconciliation status.
 
 
 
