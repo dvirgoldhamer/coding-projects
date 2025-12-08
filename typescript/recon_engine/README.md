@@ -8,7 +8,6 @@ This project is a Reconciliation Engine built in TypeScript. It is doing three m
 - Generates fake data for patients, claims, and invoices as CSV files.
 - Reads the generated CSV files to reconcile claims status against their respective invoices.
 - Produces an HTML report which summarizes claim reconciliation, and shows all of the claims in a detailed table.
----
 
 ## Project Launching
 

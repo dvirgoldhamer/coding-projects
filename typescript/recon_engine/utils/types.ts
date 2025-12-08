@@ -12,6 +12,7 @@ export interface Claim
   charges_amount: number;
   benefit_amount: number;
   cpt_code: string;
+  modifier: string;
 }
 
 export interface Invoice 
