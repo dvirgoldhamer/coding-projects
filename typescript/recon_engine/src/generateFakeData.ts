@@ -34,13 +34,16 @@ const NUM_PATIENTS = 200;
             const charges = randomFloat(1, 1000);
             const benefit = randomFloat(0, charges);
             const cpt_code = randomInt(10000,99999).toString();
+            const modifier = randomInt(1,99).toString();
+
             claims.push({
                 claim_id: claimCounter.toString(),
                 patient_id: patient.patient_id,
                 date_of_service: faker.date.past({ years: 2 })!.toISOString().split('T')[0],
                 charges_amount: charges,
                 benefit_amount: benefit,
-                cpt_code: cpt_code
+                cpt_code: cpt_code,
+                modifier: modifier
             });
             claimCounter++;
         }
@@ -78,7 +81,8 @@ const NUM_PATIENTS = 200;
             { id: 'date_of_service', title: 'date_of_service' },
             { id: 'charges_amount', title: 'charges_amount' },
             { id: 'benefit_amount', title: 'benefit_amount' },
-            { id: 'cpt_code', title: 'cpt_code'}]
+            { id: 'cpt_code', title: 'cpt_code'},
+            { id: 'modifier', title: 'modifier'}]
   });
 
   const invoicesWriter = createObjectCsvWriter({
