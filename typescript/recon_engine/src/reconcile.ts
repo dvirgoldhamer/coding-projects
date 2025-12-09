@@ -3,11 +3,11 @@ import path from 'path';
 import fs from 'fs';
 
 import type { Claim, Invoice } from '../utils/types.js';
-import readCSV from '../utils/readCSV.js';
-import groupInvoices from '../utils/groupInvoices.js';
-import reconClaims from '../utils/reconClaims.js';
-import summarize from '../utils/summarize.js';
-import generateHTML from '../utils/generateHTML.js';
+import readCSV from '../utils/reconcileUtils/readCSV.js';
+import groupInvoices from '../utils/reconcileUtils/groupInvoices.js';
+import reconClaims from '../utils/reconcileUtils/reconClaims.js';
+import summarize from '../utils/reconcileUtils/summarize.js';
+import generateHTML from '../utils/reconcileUtils/generateHTML.js';
 
 (async () => {
   const dataDir = path.join(process.cwd(), 'data');
