@@ -1,4 +1,4 @@
-import type { Claim, ReconciledClaim, ReconciliationStatus } from './types.js';
+import type { Claim, ReconciledClaim, ReconciliationStatus } from '../types.js';
 
 export default function reconClaims(claims: Claim[], totals: Record<string, number>): ReconciledClaim[] 
 {
