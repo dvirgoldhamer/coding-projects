@@ -1,4 +1,4 @@
-import { ReconciledClaim, Summary } from "./types.js";
+import { ReconciledClaim, Summary } from "../types.js";
 
 export default function summarize(reconciled: ReconciledClaim[]): Summary
 {

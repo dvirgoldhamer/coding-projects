@@ -1,4 +1,4 @@
-import type { Summary } from '../types.js';
+import type { Summary } from '../../types.js';
 
 export function generateSummaryHtml(summary: Summary): string {
   return `

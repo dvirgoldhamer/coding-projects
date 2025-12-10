@@ -1,4 +1,4 @@
-import type { Summary } from './types.js';
+import type { Summary } from '../types.js';
 import { generateSummaryHtml } from './htmlParts/summarySection.js';
 import { generateChartHtml } from './htmlParts/chart.js';
 import { generateDetailsTableHtml } from './htmlParts/detailsTable.js';
