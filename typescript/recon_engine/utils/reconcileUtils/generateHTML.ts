@@ -3,7 +3,8 @@ import { generateSummaryHtml } from './htmlParts/summarySection.js';
 import { generateChartHtml } from './htmlParts/chart.js';
 import { generateDetailsTableHtml } from './htmlParts/detailsTable.js';
 
-export default function generateHtml(summary: Summary): string {
+export default function generateHtml(summary: Summary): string 
+{
   return `
 <!DOCTYPE html>
 <html lang="en">

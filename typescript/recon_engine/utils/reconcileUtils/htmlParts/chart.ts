@@ -1,6 +1,7 @@
 import type { Summary } from '../../types.js';
 
-export function generateChartHtml(summary: Summary): string {
+export function generateChartHtml(summary: Summary): string 
+{
   return `
   <div style="width: 400px; height: 400px; margin: 20px auto;">
     <canvas id="reconciliationChart" width="400" height="400"></canvas>
