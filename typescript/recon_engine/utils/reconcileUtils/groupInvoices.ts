@@ -1,7 +1,8 @@
 import type { Invoice } from '../types.js';
 
 //key is claim_id, value is total_transactions_value for claim
-export default function groupInvoices(invoices: Invoice[]): Record<string, number> {
+export default function groupInvoices(invoices: Invoice[]): Record<string, number> 
+{
   const totals: Record<string, number> = {};
 
     for (const invoice of invoices) 
