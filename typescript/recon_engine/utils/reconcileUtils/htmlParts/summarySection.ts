@@ -1,6 +1,7 @@
 import type { Summary } from '../../types.js';
 
-export function generateSummaryHtml(summary: Summary): string {
+export function generateSummaryHtml(summary: Summary): string 
+{
   return `
   <div class="summary-box">
     <h2>Summary</h2>
