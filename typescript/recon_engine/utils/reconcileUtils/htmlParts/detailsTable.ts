@@ -1,6 +1,7 @@
 import type { ReconciledClaim } from '../../types.js';
 
-export function generateDetailsTableHtml(claims: ReconciledClaim[]): string {
+export function generateDetailsTableHtml(claims: ReconciledClaim[]): string 
+{
   return `
   <h2>Detailed Claims</h2>
   <table>
